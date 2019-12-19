@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -8,7 +9,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extension: ['.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     module: {
         rules: [{
@@ -21,15 +22,15 @@ module.exports = {
             {
                 test: /\.html$/,
                 use: [{
-                    loader: "babel-loader"
+                    loader: "html-loader"
                 }]
-            }
+            },
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
+        new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html"
         })
-    ]
-}
+    ],
+};
