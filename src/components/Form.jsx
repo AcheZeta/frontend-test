@@ -27,9 +27,8 @@ const FormInput = styled.input`
 const Forms = () => (
   <FormContainer>
     <div className="Form-container">
-      <FormInput type="text" name="" id="new" placeholder="Nuevo Pokemon" />
-      <FormInput type="text" name="" id="name" placeholder="Nombre" />
-      <FormInput type="text" name="" id="number" placeholder="Numero" />
+      <FormInput type="text" name="" id="new" placeholder="Nombre" />
+      <FormInput type="text" name="" id="number" placeholder="Email" />
     </div>
   </FormContainer>
 );
