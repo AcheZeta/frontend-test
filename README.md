@@ -74,6 +74,10 @@ The form component has text entries to receive the values ​​that would be pa
 
 The button will take the id of the letter and using the Http delete method would delete the selected user. (Not available yet).
 
+## Deploy.
+
+I use [Travis-ci](https://travis-ci.org/AcheZeta/frontend-test) to deploy into [GitHub Pages](https://achezeta.github.io/frontend-test).
+
 ### Testing (Not available yet)
 
 For testing I read [How to test React-Redux connected Components](https://www.robinwieruch.de/react-connected-component-test)
@@ -82,3 +86,13 @@ For testing I read [How to test React-Redux connected Components](https://www.ro
 - [Github project](https://github.com/AcheZeta/frontend-test)
 - [Deployed project](https://achezeta.github.io/frontend-test/).
 - Personal websites: [Portfolio](https://achezeta.github.io/portafolio/), [LinkedIn](https://www.linkedin.com/in/hame-elizalde/) 
+
+
+## Deployment
+
+In the project directory, you can run:
+
+**`npm start`**
+
+To Run the app in the development mode.
+The page will reload if you make edits.
