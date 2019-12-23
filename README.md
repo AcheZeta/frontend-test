@@ -1,12 +1,22 @@
 # Frontend-test
 
-## About
+## Index  📌
+
+- [About](#About) ℹ️
+- [Goals](#Goals) 📝
+- [Plans](#Plans) 📅
+- [Thoughts & Details](#Thoughts-&-Details) 📁
+- [Deploy](#Deploy) 🚀
+- [About Me](#About-Me) 👩‍💻 
+- [Scripts & Test](#Scripts-&-Test) ✏️ 
+
+## About ℹ️
 
 This is an open-ended test for Front End Developers.  
 I have 5 days to finish it.  
 You can see the original repository [here](https://github.com/runahr/frontend-test)
 
-## Goals
+## Goals 📝
 
 - I set up a greenfield project using react, webpack, babel, [Eslint Airbnb](https://github.com/airbnb/javascript) and redux.
 - I took the information from an open API [JsonPlaceHolder](https://jsonplaceholder.typicode.com/users).
@@ -14,7 +24,7 @@ You can see the original repository [here](https://github.com/runahr/frontend-te
 - I create a list of users.
 - I use styled-components to style the application.
 
-## Plans.
+## Plans. 📅 
 
 - For this project I decided to create a React project from scratch, building my own Webpack, this took me longer than I expected. For another iteration, I would use libraries like `create-react-app` and use the time more efficiently.
 - I weren't able to finish all the goals of the project but if I had to start over or continue, I will: 
@@ -24,7 +34,9 @@ You can see the original repository [here](https://github.com/runahr/frontend-te
     - Show the data in DOM. 
     - Set styles with styled-components.
 
-### Explain your thoughts on the project you built, the Architecture of the folders, how you built the pages, and elements, etc.
+### Thoughts & Details 📁
+
+_Explain your thoughts on the project you built, the Architecture of the folders, how you built the pages, and elements, etc._
 
 I liked this project, although I was familiar with some parts of the test, my biggest challenge was deciding how to face the aspects that I did not know as a state.
 
@@ -44,6 +56,7 @@ In the Components folder i create:
 In containers Folders i only have the [app.jsx ](https://github.com/AcheZeta/frontend-test/blob/develop/src/containers/App.jsx)
 
 [Hooks folder](https://github.com/AcheZeta/frontend-test/blob/develop/src/hooks/) contain [useGetData.js]((https://github.com/AcheZeta/frontend-test/blob/develop/src/hooks/useGetData.js)) the file to call the API where i use the Hooks ``` { useState, useEffect } ``` to set the data. 
+
 ```
 import { useState, useEffect } from 'react';
 
@@ -74,21 +87,19 @@ The form component has text entries to receive the values ​​that would be pa
 
 The button will take the id of the letter and using the Http delete method would delete the selected user. (Not available yet).
 
-## Deploy.
+## Deploy. 🚀
 
 I use [Travis-ci](https://travis-ci.org/AcheZeta/frontend-test) to deploy into [GitHub Pages](https://achezeta.github.io/frontend-test).
 
-### Testing (Not available yet)
 
-For testing I read [How to test React-Redux connected Components](https://www.robinwieruch.de/react-connected-component-test)
-
+## About Me. 👩‍💻 
 
 - [Github project](https://github.com/AcheZeta/frontend-test)
 - [Deployed project](https://achezeta.github.io/frontend-test/).
 - Personal websites: [Portfolio](https://achezeta.github.io/portafolio/), [LinkedIn](https://www.linkedin.com/in/hame-elizalde/) 
 
 
-## Deployment
+## Scripts & Test ✏️ 
 
 In the project directory, you can run:
 
@@ -96,3 +107,7 @@ In the project directory, you can run:
 
 To Run the app in the development mode.
 The page will reload if you make edits.
+
+**Testing (Not available yet)**
+
+For testing I read [How to test React-Redux connected Components](https://www.robinwieruch.de/react-connected-component-test)
