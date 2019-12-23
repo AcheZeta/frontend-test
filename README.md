@@ -44,6 +44,25 @@ In the Components folder i create:
 In containers Folders i only have the [app.jsx ](https://github.com/AcheZeta/frontend-test/blob/develop/src/containers/App.jsx)
 
 [Hooks folder](https://github.com/AcheZeta/frontend-test/blob/develop/src/hooks/) contain [useGetData.js]((https://github.com/AcheZeta/frontend-test/blob/develop/src/hooks/useGetData.js)) the file to call the API where i use the Hooks ``` { useState, useEffect } ``` to set the data. 
+```
+import { useState, useEffect } from 'react';
+
+const api = 'https://jsonplaceholder.typicode.com/users';
+
+const useGetData = () => {
+  const [myData, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(api)
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
+  return myData;
+};
+
+export default useGetData;
+```
 
 Then in the [app.jsx ](https://github.com/AcheZeta/frontend-test/blob/develop/src/containers/App.jsx) I import the data and pass it to card component as a prop.
 
