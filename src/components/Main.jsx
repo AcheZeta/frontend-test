@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const MainStyle = styled.div`
   display: grid;
   grid-template-columns: minmax(auto, 1024px);
-  justify-content: center;
-  padding: 1em;
+  padding: 2em;
 `;
 
 const Main = ({ children }) => (

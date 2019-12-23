@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
 
-const api = 'https://pokeapi.co/api/v2/pokemon/';
+const api = 'https://jsonplaceholder.typicode.com/users';
+
 const useGetData = () => {
-  const [mydata, setData] = useState([]);
+  const [myData, setData] = useState([]);
 
   useEffect(() => {
     fetch(api)
       .then((response) => response.json())
-      .then((data) => setData(data.results.map((pokemon) => pokemon.name)));
+      .then((data) => setData(data));
   }, []);
 
-  return mydata;
+  return myData;
 };
 
 export default useGetData;
