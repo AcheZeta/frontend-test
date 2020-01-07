@@ -11,7 +11,6 @@ const App = () => {
     <Main>
       <Cards
         data={data}
-        key={data.id}
       />
       <Forms />
     </Main>
