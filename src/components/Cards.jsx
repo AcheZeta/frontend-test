@@ -31,7 +31,7 @@ const Cards = ({ data }) => (
   <div className="Projectos">
     <CardContainer>
       {data.map((user) => (
-        <CardDiv>
+        <CardDiv key={user.id}>
           <h2>{user.name}</h2>
           <CardDetail key={`card-${user.id}`}>
             {user.email}
